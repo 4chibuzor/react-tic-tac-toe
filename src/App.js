@@ -77,7 +77,7 @@ function App(props) {
     return gameWon;
   };
 
-  const computerRandomMove = (handleClick) => {
+  const computerRandomMove = () => {
     if (changeTurn.isAiTurn) {
       const availableCells = availableSquare();
       const randomMove = Math.floor(Math.random() * availableCells.length);
