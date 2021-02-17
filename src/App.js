@@ -24,11 +24,10 @@ function App(props) {
 
   const isAvailableSquare = () => {
     const emptyCells = availableSquare();
-    if (emptyCells.length === 0) {
-      return false;
-    } else {
+    if (emptyCells.length) {
       return true;
     }
+    return false;
   };
 
   const handleClickCell = (id, newValue) => {
